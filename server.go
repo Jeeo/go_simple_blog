@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	PORT := "3001"
+	PORT := "3000"
 	mux := http.NewServeMux()
 	files := http.FileServer(http.Dir("public"))
 
