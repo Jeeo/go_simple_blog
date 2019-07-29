@@ -1,0 +1,26 @@
+{{ define "navbar" }}
+
+<nav class="navbar">
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo left">
+      <div class="logo_container">
+        <i class="material-icons">
+          chrome_reader_mode
+        </i>
+        <span> blog </span>
+      </div>
+    </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {{if (.Auth) }}
+      <li><a href="/userPanel">User Panel</a></li>
+      <li><a href="/writePost">Write a Post</a></li>
+      <li><a href="/logout">Logout</a></li>
+      {{else}}
+      <li><a href="/signup">Register</a></li>
+      <li><a href="/login">Login</a></li>
+      {{end}}
+    </ul>
+  </div>
+</nav>
+
+{{ end }}

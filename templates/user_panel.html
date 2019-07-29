@@ -1,0 +1,22 @@
+{{define "content"}}
+<div class="container">
+  {{.Message}}
+  <ul class="collection">
+    {{range .Posts}}
+    <li class="collection-item">
+      {{.Title}}
+      <a href="/post/{{.ID}}" class="secondary-content secondary-content-item">
+        <i class="material-icons">
+            remove_red_eye
+        </i>
+      </a>
+      <a href="#!" class="secondary-content secondary-content-item" onclick="deletePost({{.ID}})">
+        <i class="material-icons">
+            delete_forever
+        </i>
+      </a>
+    </li>
+    {{end}}
+  </ul>
+</div>
+{{end}}

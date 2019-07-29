@@ -1,0 +1,24 @@
+{{define "content" }}
+
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <h4> {{ .Message }} </h4>
+      {{ range .Posts }}
+      <ul class="post-list">
+        <li class="post-list-item">
+          <a href="/post/{{.ID}}">
+            <div class="post-list-item-container">
+              <h5> {{.Title}} </h5>
+              <small>by {{.Author}}</small>
+            </div>
+          </a>
+        </li>
+      </ul>
+      {{end}}
+    </div>
+
+  </div>
+</div>
+
+{{ end }}

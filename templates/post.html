@@ -1,0 +1,19 @@
+{{define "content"}}
+  <div class="container">
+    <h3>{{.Post.Title}}</h3>
+    <blockquote> Written by {{.Post.Author}}</blockquote>
+    <p class="flow-text">
+      {{.Post.Content}}
+    </p>
+    <a class="waves-effect waves-light btn-small" href="/"> 
+      <i class="material-icons">
+      keyboard_backspace
+      </i>
+    </a>
+    {{if .Auth}}
+    <a class="waves-effect waves-light btn-small" href="/userPanel">
+      back User Panel
+    </a>
+    {{end}}
+  </div>
+{{end}}

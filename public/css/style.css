@@ -1,0 +1,22 @@
+.navbar {
+  margin-bottom: 1em;
+}
+
+.logo_container {
+  margin-left: 1em;
+}
+
+.post-list-item-container {
+  border: 1px solid rgba(0, 0, 0, 0.089);
+  border-radius: 10px;
+  padding: .5em;
+  color: black;
+}
+
+.post-list-item-container:visited {
+  text-decoration: none;
+}
+
+.secondary-content-item {
+  margin: .3em
+}
